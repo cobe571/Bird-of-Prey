@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Bird-of-Prey-base.xml">
+
+  <sim>
+
+    <description>Boeing Bird of Prey (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>Bird-of-Prey-yasim</aero>
+
+  </sim>
+
+</PropertyList>

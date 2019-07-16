@@ -1,0 +1,23 @@
+Boeing Bird of Prey
+
+3D Model/FDM By Patrizio MELIS 2015
+
+================
+
+Sources: http://en.wikipedia.org/wiki/Boeing_Bird_of_Prey
+
+================
+
+Manufacturer                  : McDonnell Douglas/Boeing
+Type                          : Black Project Aircraft
+Year                          : September 11, 1996 / April 1999
+Powerplant                    : Pratt & Whitney Canada JT15D-5C , 3,190 lbf (14.2 kN)
+Wingspan                      : 22 ft 8 in (6.91 m)
+Length                        : 46 ft 8 in (14.22 m)
+Height                        : 9 ft 3 in (2.82 m)
+weight                        : 7,400 lb (3,356 kg)
+Cruise speed                  : 260 knots (299 mph, 482 km/h)
+Range                         : 20,000 ft (6,100 m)
+Crew                          : 1 
+
+===============

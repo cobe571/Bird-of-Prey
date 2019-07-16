@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- <PropertyList include="Bird-of-Prey-jsbsim-cnf.xml"> -->
+<PropertyList include="Bird-of-Prey-yasim-cnf.xml">
+
+  <sim>
+
+    <description>Boeing Bird of Prey (YASim)</description>
+    <author>Patrizio Melis (3D/FDM)</author>
+
+    <rating>
+      <FDM type="int">     0 </FDM>
+      <systems type="int"> 0 </systems>
+      <cockpit type="int"> 0 </cockpit>
+      <model type="int">   3 </model>
+    </rating>
+
+  </sim>
+
+</PropertyList>
+

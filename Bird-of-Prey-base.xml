@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+ 
+    <author>Patrizio Melis</author>
+    <aircraft-version>0.3</aircraft-version>
+    <status>Alpha</status>
+   
+    <fuel-fraction>0.75</fuel-fraction>
+  
+    <startup>
+      <splash-texture>Aircraft/Bird-of-Prey/Bird-of-Prey-splash.png</splash-texture>
+    </startup>
+
+    <model>
+      <path>Aircraft/Bird-of-Prey/Models/Bird-of-Prey.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <sound>
+      <path>Aircraft/Bird-of-Prey/Sounds/Bird-of-Prey-sound.xml</path>
+    </sound>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
+        <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
+        <float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
+        <float n="6" alias="/engines/engine[0]/n1" />
+        <float n="8" alias="/controls/engines/engine[0]/throttle" />
+        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Boeing Bird of Prey</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+    </help>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+    </multiplay>
+
+    <weight n="0">
+      <name>Crew</name>
+      <weight-lb>180</weight-lb> 
+      <max-lb>400</max-lb>
+      <min-lb>180</min-lb>
+    </weight>
+
+    <replay>
+      <disable>1</disable>
+    </replay>
+
+    <menubar include="Dialogs/Bird-of-Prey-menu.xml"/>
+
+  </sim>
+
+  <environment>
+    <turbulence>
+      <use-cloud-turbulence>true</use-cloud-turbulence>
+    </turbulence>
+  </environment>
+
+  <controls>
+    <gear>
+      <brake-parking type="double">1</brake-parking>
+    </gear>
+  </controls>
+
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <on-startup-running type="bool">false</on-startup-running>
+    </engine>
+    <engine n="1">
+      <engine-num type="int">1</engine-num>
+      <on-startup-running type="bool">true</on-startup-running>
+    </engine>
+  </engines>
+
+  <input>
+    <keyboard include="Nasal/Bird-of-Prey-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <doors>
+      <file>Aircraft/Bird-of-Prey/Nasal/doors.nas</file>
+    </doors>
+    <Bird-of-Prey>
+      <file>Aircraft/Bird-of-Prey/Nasal/light.nas</file>
+      <file>Aircraft/Bird-of-Prey/Nasal/liveries.nas</file>
+    </Bird-of-Prey>
+  </nasal>
+
+</PropertyList>
+
