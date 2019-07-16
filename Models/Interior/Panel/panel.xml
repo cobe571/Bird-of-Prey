@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Object List -->
+	<object-name>basethrottle</object-name>
+	<object-name>boxleft</object-name>
+	<object-name>boxright</object-name>
+    <object-name>panel.01</object-name>
+	<object-name>panel.02</object-name>
+	<object-name>pedals</object-name>
+	<object-name>sides</object-name>
+	<object-name>supportleft</object-name>
+	<object-name>supportright</object-name>
+	<object-name>switchs</object-name>
+	<object-name>throttleL</object-name>
+    <object-name>throttleR</object-name>
+    <object-name>yoke</object-name>
+    <!-- Transparent objects -->
+  </animation>
+
+</PropertyList>

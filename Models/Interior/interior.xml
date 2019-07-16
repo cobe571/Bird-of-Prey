@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Object List -->
+    <object-name>interior</object-name>
+    <object-name>contour-IN</object-name>
+    <!-- Transparent Objects -->
+    <object-name>glass-IN</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>glass-IN</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>glass-IN</object-name>
+  </animation>
+
+ <!-- Pilot -->
+  <model>
+    <path>Aircraft/Bird-of-Prey/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -4.510 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.200 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Panel -->
+  <model>
+    <path>Aircraft/Bird-of-Prey/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -5.49037 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.28003 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Seat -->
+  <model>
+    <path>Aircraft/Bird-of-Prey/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -4.46046 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.17115 </z-m>
+    </offsets>
+  </model>
+  <!--
+  <animation>
+    <type>translate</type>
+    <object-name>helmet-visor</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -0.5 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+-->
+</PropertyList>
